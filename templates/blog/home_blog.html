@@ -1,0 +1,18 @@
+{% extends 'blog/default_blog.html' %}
+
+{% block title_ %}
+    <title>Blog Home</title>
+{% endblock title_ %}
+
+{% block content %}
+    {%  for post in object_list %}
+        <li class="iterable">
+            <div class="container">
+                <div class="text-primary">Автор: {{ post.author }}</div>
+                <h2 class="title text-center"><a href="{% url 'detail_view' post.pk %}">{{ post.title }}</a></h2>
+                <h1 ><p class="text">{{ post.content }}</p></h1>
+                <p class="text-date">Дата добавления поста - {{ post.datetime_add }}</p>
+            </div>
+        </li>
+    {%  endfor %}
+{% endblock content %}

@@ -1,0 +1,20 @@
+{%  extends 'blog/default_blog.html' %}
+
+
+{% block title_ %}
+    <title>Sing in</title>
+{% endblock %}
+
+
+{% block content %}
+    <h2 class="text-center text-primary">Login</h2>
+
+    <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sing in</button>
+
+    </form>
+{% endblock %}
+
+

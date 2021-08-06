@@ -1,0 +1,35 @@
+.text{
+    color: red;
+    font-size: 15px;
+}
+
+.text-center{
+    font-size: 50px;
+}
+.cont-div{
+      width: 960px;
+      margin:0 auto;
+}
+.text-date{
+ color: green;
+}
+.div{
+    padding-bottom: 250px;
+}
+
+.iterable{
+    padding-bottom: 50px;
+}
+
+
+.footer{
+    color: green;
+
+}
+.logintext{
+    color: red;
+    font-size: 15px;
+}
+
+
+

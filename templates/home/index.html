@@ -1,0 +1,16 @@
+{% extends 'blog/default_blog.html' %}
+{% load static %}
+    <link href="{% static 'css/home.css' %}" rel="stylesheet" >
+{% block title_ %}
+    <title>Home</title>
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="img">
+            <img src="{% static 'css/img/img.img' %}">
+
+        </div>
+
+    </div>
+{% endblock %}
